@@ -1,0 +1,28 @@
+<!-- <div class="chat-container">
+    <div class="messages">
+        <div *ngFor="let message of messages">
+            <strong>{{ message.user }}:</strong> {{ message.message }}
+        </div>
+    </div>
+    <div class="message-input">
+        <input [(ngModel)]="messageContent" placeholder="Type a message" />
+        <button (click)="sendMessage()">Send</button>
+    </div>
+</div> -->
+
+
+<div class="chat-container">
+    <div>
+        <input [(ngModel)]="room" placeholder="Enter room name" />
+        <button (click)="joinRoom()">Join Room</button>
+    </div>
+    <div class="messages">
+        <div *ngFor="let message of messages">
+            <strong>{{ message.user }}:</strong> {{ message.message }}
+        </div>
+    </div>
+    <div class="message-input">
+        <input [(ngModel)]="messageContent" placeholder="Type a message" />
+        <button (click)="sendMessage()">Send</button>
+    </div>
+</div>

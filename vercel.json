@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "dist/chat-app/**/*", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/dist/chat-app/$1" }
+    ]
+  }
+  
