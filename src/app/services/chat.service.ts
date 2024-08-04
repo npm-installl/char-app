@@ -38,10 +38,11 @@ export class ChatService {
   // private apiUrl = 'https://chat-server-kappa-opal.vercel.app/messages'; // HTTP API endpoint to fetch messages
   // private socket = io('chat-server-git-main-sks-projects-e9394d4c.vercel.app'); // WebSocket server URL
   // private apiUrl = 'chat-server-git-main-sks-projects-e9394d4c.vercel.app/messages'; // HTTP API endpoint to fetch messages
-  private socket = io('https://chat-server-oltmqo3ce-sks-projects-e9394d4c.vercel.app/', {
+  private socket = io('https://chat-server-3f0naf5ee-sks-projects-e9394d4c.vercel.app/', {
+    
     transports: ['websocket', 'polling']
   });
-  private apiUrl = 'https://chat-server-oltmqo3ce-sks-projects-e9394d4c.vercel.app/messages';
+  private apiUrl = 'https://chat-server-3f0naf5ee-sks-projects-e9394d4c.vercel.app/messages';
   // private socket = io('http://localhost:5000'); // WebSocket server URL
   // private apiUrl = 'http://localhost:5000/messages'; // HTTP API endpoint to fetch messages
 
