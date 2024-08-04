@@ -32,14 +32,11 @@ import { HttpClient } from '@angular/common/http';
 // }
 
 export class ChatService {
-  // private socket = io('https://backend-7sofnw3pt-shahnwazs-projects.vercel.app'); // WebSocket server URL
-  // // private apiUrl = 'https://backend-7sofnw3pt-shahnwazs-projects.vercel.app'; // HTTP API endpoint to fetch messages
   // private socket = io('https://chat-server-kappa-opal.vercel.app/'); // WebSocket server URL
   // private apiUrl = 'https://chat-server-kappa-opal.vercel.app/messages'; // HTTP API endpoint to fetch messages
   // private socket = io('chat-server-git-main-sks-projects-e9394d4c.vercel.app'); // WebSocket server URL
   // private apiUrl = 'chat-server-git-main-sks-projects-e9394d4c.vercel.app/messages'; // HTTP API endpoint to fetch messages
   private socket = io('https://chat-server-3f0naf5ee-sks-projects-e9394d4c.vercel.app/', {
-    
     transports: ['websocket', 'polling']
   });
   private apiUrl = 'https://chat-server-3f0naf5ee-sks-projects-e9394d4c.vercel.app/messages';
